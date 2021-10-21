@@ -1,4 +1,4 @@
-package com.nawawi.pbo.modul0.percobaan;
+package com.nawawi.pbo.modul2.percobaan;
 
 import java.util.Scanner;
 public class InputKeyboard {
