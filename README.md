@@ -3,7 +3,10 @@
 ## Dasar Teori
 - **Keyword dalam Java**
 
-  Keyword (atau sering disebut Reserverd Keyword) adalah identifier yang telah dipesan untuk didefinisikan sebelumnya oleh Java untuk tujuan tertentu. Anda tidak dapat dapat menggunakan keyword sebagai nama *variable*, *class*, dan *method*.
+  Keyword (atau disebut Reserverd Keyword) adalah identifier yang telah ditetapkan dalam bahasa pemrograman Java yang tidak dapat digunakan sebagai identifier *variable*, *method*, *class*, atau yang lainnya.
+  
+  Identifier adalah urutan dari satu atau lebih karakter yang kemudian dijadikan nama untuk sebuah *package*, *class*, *interface*, *method*, atau *variable*. Karakter pertama harus merupakan karakter pertama yang valid (`huruf`, `$`, `_`).
+
   
   Berikut ini keyword dalam Java:
   
@@ -22,7 +25,11 @@
   
   > `*not used` `**added in 1.2` `***added in 1.4` `****added in 5.0`
 
-  ***sumber:** https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html*
+  ***sumber:***  
+  *https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html*  
+  *https://docs.oracle.com/cd/E19798-01/821-1841/bnbuk/index.html*
+
+  ---
   
 - **Tipe Dasar**
 
@@ -57,9 +64,30 @@
   
   ***sumber:** https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html*
   
+  ---
+  
 - **Variabel**
 
-  Penjelasan Teori
+  Variabel adalah wadah untuk menyimpan nilai data. Untuk membuat sebuah variabel, tentukan terlebih dahulu tipe datanya, kemudian berikan nilainya.
+  
+  > **Sintaks**
+  > 
+  > `type variable = value;`
+
+  Dimana *type* adalah salah satu tipe data dalam Java, dan *variable* adalah nama variabel. Tanda sama dengan `=` digunakan untuk memberikan nilai pada variabel.
+  
+  Untuk penamaan variabel dalam Java ada ketentuan umumnya (disebut *Convention*/Konvensi), yaitu:
+  
+  - Nama variabel *case-sensitive* (huruf kecil dan besar dianggap berbeda). Sebuah nama variabel dapat berupa identifier apa pun. Tetapi, konvensinya adalah selalu diawali dengan huruf, bukan `$` atau `_`.
+  - Karakter selanjutnya bisa huruf, angka, `$`, atau `_`. Konvensinya (dan hal yang umum) berlaku juga untuk aturan ini.
+  - Jika nama yang digunakan hanya satu kata, ejakan kata tersebut dalam huruf kecil semua. Jika terdapat dua kata atau lebih, kapitalkan huruf pertama setiap kata selanjutnya. Contohnya `anakAyam`, `pendapatanTahunan`, dll.
+  - Jika variabel tersebut termasuk konstanta (variabel yang tidak dapat dirubah nilainya setelah dideklarasikan), maka konvensinya sedikit berubah. Setiap huruf dikapitalkan dan setiap kata dipisah dengan `_`. Contohnya `final int PI = 3.14;`, `final int JUMLAH_GERIGI = 6;`, dll.
+
+  ***sumber:***  
+  *https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html*  
+  *https://www.w3schools.com/java/java_variables.asp*
+
+  ---
   
 - **Casting dan Promotion**
 
