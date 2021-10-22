@@ -5,7 +5,7 @@
 
   Keyword (atau disebut Reserverd Keyword) adalah identifier yang telah ditetapkan dalam bahasa pemrograman Java yang tidak dapat digunakan sebagai identifier *variable*, *method*, *class*, atau yang lainnya.
   
-  Identifier adalah urutan dari satu atau lebih karakter yang kemudian dijadikan nama untuk sebuah *package*, *class*, *interface*, *method*, atau *variable*. Karakter pertama harus merupakan karakter pertama yang valid (`huruf`, `$`, `_`).
+  Identifier adalah urutan dari satu atau lebih karakter yang kemudian dijadikan nama untuk sebuah *package*, *class*, *interface*, *method*, atau *variable*. Karakter pertama harus merupakan karakter pertama yang valid (huruf, `$`, `_`).
 
   
   Berikut ini keyword dalam Java:
@@ -72,7 +72,9 @@
   
   > **Sintaks**
   > 
-  > `type variable = value;`
+  > ```java
+  > type variable = value;
+  > ```
 
   Dimana *type* adalah salah satu tipe data dalam Java, dan *variable* adalah nama variabel. Tanda sama dengan `=` digunakan untuk memberikan nilai pada variabel.
   
@@ -91,22 +93,65 @@
   
 - **Casting dan Promotion**
 
-  Penjelasan Teori
+  Mengubah tipe data yang lebih tinggi menjadi yang lebih rendah disebut *Casting*/*Narrowing*. Sedangkan mengubah tipe data yang lebih rendah menjadi yang lebih tinggi disebut *Promotion*/*Widening*.
+  
+  > **Sintaks**
+  > 
+  > ```java
+  > int p = (int) 10L;
+  > long i = 10;
+  > ```
+  
+  ***sumber:***  
+  *https://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html*  
+  *https://www.w3schools.com/java/java_type_casting.asp*  
+  *https://www.geeksforgeeks.org/type-conversion-java-examples/*  
+  *https://www.javatpoint.com/type-casting-in-java*
+  
+  ---
 
 ## Praktikum
-Soal : 
-1. Aritmatika
-2. CobaUnicode
-3. InputKeyboard
-4. Tipe
+**Soal:**
+1. Menganalisa batasan maksimum dari suatu tipe
+2. Anak Ayam
+3. A+B-C
 
-Jawaban :
-1. [Jawaban Soal 1](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul0/src/com/nawawi/pbo/modul0/percobaan/Aritmatika.java)
-2. [Jawaban Soal 2](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul0/src/com/nawawi/pbo/modul0/percobaan/CobaUnicode.java)
-3. [Jawaban Soal 3](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul0/src/com/nawawi/pbo/modul0/percobaan/InputKeyboard.java)
-4. [Jawaban Soal 4](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul0/src/com/nawawi/pbo/modul0/percobaan/Tipe.java)
+**Jawaban:**
+1. [Jawaban 1](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul2/src/com/nawawi/pbo/modul2/latihan/BigInteger.java)
 
-<hr>
+```java
+public class BigInteger {
+  public static void main(String[] args) {
+    long p = 2147483648;
+  }
+}
+```
+
+Sintaks di atas akan menampilkan error:
+
+```bash
+java: integer number too large: 2147483648
+```
+
+Kenapa bisa ada error angka terlalu besar? Sedangkan tipe data `long` batas maksimumnya adalah 2⁶³-1 (9.223.372.036.854.775.999). Hal itu dikarenakan tipe data `long` akhirannya harus dengan huruf `L` atau `l`. Jika tidak, maka akan dianggap tipe data `int`.
+
+```java
+public class BigInteger {
+  public static void main(String[] args) {
+    long p = 2147483648L;
+  }
+}
+```
+
+> ***Catatan:** Direkomendasikan menggunakan* `L` *daripada* `l` *karena huruf* `l` *susah dibedakan dengan angka* `1` *.*
+
+***sumber:** https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html*
+
+2. [Jawaban 2](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul2/src/com/nawawi/pbo/modul2/latihan/AnakAyam.java)
+3. [Jawaban 3](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul2/src/com/nawawi/pbo/modul2/latihan/Abc.java)
+
+---
 
 ## Kesimpulan
+
 Mengulangi code dasar perintah java dan tipe dasar dari variable
