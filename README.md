@@ -154,4 +154,4 @@ public class BigInteger {
 
 ## Kesimpulan
 
-Mengulangi code dasar perintah java dan tipe dasar dari variable
+Mengulangi materi dasar perintah Java dan tipe dasar dari variabel.
