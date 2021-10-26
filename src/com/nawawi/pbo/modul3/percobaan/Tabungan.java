@@ -7,7 +7,7 @@ public class Tabungan {
         this.saldo = saldo;
     }
 
-    public void ambilUang(int saldo) {
-        this.saldo -= saldo;
+    public void ambilUang(int jumlah) {
+        this.saldo -= jumlah;
     }
 }
