@@ -1,10 +1,10 @@
 package com.nawawi.pbo.modul3.latihan;
 
 public class Tabungan {
-    private int saldo;
+    public int saldo;
 
     Tabungan(int saldo) {
-
+        this.saldo = saldo;
     }
 
     public int getSaldo() {
