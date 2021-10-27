@@ -11,30 +11,30 @@ public class TesTabungan {
         System.out.println("Jumlah uang yang disimpan: 8000");
 
         status = tabungan.ambilUang(7000);
-        System.out.println("Jumlah uang yang diambil: 7000");
+        System.out.print("Jumlah uang yang diambil: 7000");
         if (status) {
-            System.out.println("OK");
+            System.out.println(" OK");
         } else {
-            System.out.println("GAGAL");
+            System.out.println(" GAGAL");
         }
 
         tabungan.simpanUang(1000);
         System.out.println("Jumlah uang yang disimpan: 1000");
 
         status = tabungan.ambilUang(10000);
-        System.out.println("Jumlah uang yang diambil: 10000");
+        System.out.print("Jumlah uang yang diambil: 10000");
         if (status) {
-            System.out.println("OK");
+            System.out.println(" OK");
         } else {
-            System.out.println("GAGAL");
+            System.out.println(" GAGAL");
         }
 
         status = tabungan.ambilUang(2500);
-        System.out.println("Jumlah uang yang diambil: 2500");
+        System.out.print("Jumlah uang yang diambil: 2500");
         if (status) {
-            System.out.println("OK");
+            System.out.println(" OK");
         } else {
-            System.out.println("GAGAL");
+            System.out.println(" GAGAL");
         }
 
         tabungan.simpanUang(2000);
