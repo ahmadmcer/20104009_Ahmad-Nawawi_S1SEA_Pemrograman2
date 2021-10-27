@@ -127,8 +127,8 @@ Mengimplementasikan UML Class Diagram dalam program untuk `class Tabungan`
 | +saldo: int |
 | +Tabungan(saldo: int)<br>+getSaldo(): int<br>+simpanUang(jumlah: int)<br>+ambilUang(jumlah: int): boolean |
 
-**Jawaban:**
-[Jawaban](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul2/src/com/nawawi/pbo/modul3/latihan/Tabungan.java)
+**Jawaban:**  
+[Jawaban](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul3/src/com/nawawi/pbo/modul3/latihan/Tabungan.java)
 
 ```java
 public class Tabungan {
