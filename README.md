@@ -43,7 +43,7 @@
   public class Kendaraan {
     
     // Atribut
-    public int bahanBakar;
+    public int bensin;
     public int kecepatan;
     
   }
@@ -132,7 +132,7 @@ Mengimplementasikan UML Class Diagram dalam program untuk `class Tabungan`
 
 ```java
 public class Tabungan {
-  private int saldo;
+  public int saldo;
 
   Tabungan(int saldo) {
     this.saldo = saldo;
