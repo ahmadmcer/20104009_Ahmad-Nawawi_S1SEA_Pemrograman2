@@ -212,4 +212,4 @@ Hitung: 0
 
 - *Encapsulation* digunakan untuk melindungi data suatu *class* dari akses luar *class* tersebut.
 - *Constructor* digunakan untuk menginisialisasi variabel-variabel secara instan pada saat instansiasi *object* baru.
-- *Overloading Constructor* digunakan untuk membuat *constructor* lebih dari satu, sehingga
+- *Overloading Constructor* digunakan untuk membuat *constructor* lebih dari satu, sehingga sistem akan menggunakan *constructor* yang cocok dengan parameter yang digunakannya.
