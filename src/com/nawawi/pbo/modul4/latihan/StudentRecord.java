@@ -11,7 +11,7 @@ public class StudentRecord {
     private static int studentCount;
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
@@ -19,7 +19,7 @@ public class StudentRecord {
     }
 
     public double getAverage() {
-        return (this.mathGrade + this.englishGrade + this.scienceGrade) / 3;
+        return (mathGrade + englishGrade + scienceGrade) / 3;
     }
 
     public static int getStudentCount() {
