@@ -159,7 +159,7 @@ private static int studentCount;
 Kemudian supaya dari luar *class* StudentRecord bisa mendapatkan data serta menetapkan data, maka dibuatlah *getter* dan *setter*-nya.
 
 Untuk *getter*-nya adalah:  
-1. Mendaptkan name  
+1. Mendapatkan name  
    ```java
    public String getName() {
      return name;
@@ -173,7 +173,7 @@ Untuk *getter*-nya adalah:
    }
    ```
 
-3. Mendepatkan studentCount
+3. Mendapatkan studentCount
    ```java
    public static int getStudentCount() {
      return studentCount;
