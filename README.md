@@ -1,12 +1,56 @@
-# 20104009_Ahmad-Nawawi_S1SEA_Pemrograman2
-Mata kuliah Pemrograman 2
+# Modul 8: Polimorfisme
+
+## Dasar Teori
+
+***Polymorphism*** (Polimorfisme) adalah kemampuan untuk mempunyai beberapa bentuk *class* yang berbeda. Polimorfisme ini terjadi pada saat suatu *object* bertipe *parent class* pemanggilan *constructor*-nya melalui *subclass*. Misalnya deklarasi pertnyataan berikut ini:
+
+```java
+Employee employee = new Manager();
+```
+
+***Virtual Method Invocation (VMI)*** bisa terjadi jika terjadi polimorfisme dan overriding. Pada saat *object* yang sudah dibuat tersebut memanggil *overriden method* pada *parent class*, kompiler Java akan melakukan *invocation* (pemanggilan) terhadap *overriding method* pada *subclass*, di mana yang seharusnya dipanggil adalah *overriden method*. Berikut contoh terjadinya VMI:
+
+```java
+class Parent {
+  int x = 5;
+  public void info() {
+    System.out.println("Ini class Parent");
+  }
+}
+
+class Child extends Parent {
+  int x = 10;
+  public void info() {
+    System.out.println("Ini class Child");
+  }
+}
+
+public class Tes {
+  public static void main(String args[]) {
+    Parent tes = new Child(); 
+    System.out.println("Nilai x = " + tes.x);
+    tes.info();
+  }
+}
+```
 
 ---
 
-## Daftar Isi :
-1. [**Modul 2:** Dasar Pemrograman Java](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul2)
-2. [**Modul 3:** Pengenalan Pemrograman Berorientasi Objek](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul3)
-3. [**Modul 4:** Dasar Pemrograman Berorientasi Objek](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul4)
-4. [**Modul 5:** Mengelola Class](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul5)
-5. [**Modul 6:** Konsep Inheritance](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul6)
-6. [**Modul 7:** Overloading dan Overriding](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/modul7)
+## Praktikum
+
+**Virtual Method Invocation**
+  
+[Pegawai](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul8/src/com/nawawi/pbo/modul8/latihan/Pegawai.java)  
+[Gaji](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul8/src/com/nawawi/pbo/modul8/latihan/Gaji.java)  
+[VirtualDemo](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/blob/modul8/src/com/nawawi/pbo/modul8/latihan/VirtualDemo.java)
+
+**Analisis**  
+Pada class VirtualDemo kita akan menampilkan statement ```Memanggil mailCheck Berdasarkan Referensi Gaji --``` dan ```Memanggil mailCheck Berdasarkan Referensi Pegawai--```. Lalu kita juga memanggil objek ```s.mailcheck``` dan objek ```e.mailcheck``` sehingga parameter objek gaji dan pegawai tidak akan ditampilkan pada program karena program main tidak memintanya untuk ditampilkan.
+
+---
+
+## Kesimpulan
+
+***Polymorphism*** (Polimorfisme) adalah kemampuan untuk mempunyai beberapa bentuk *class* yang berbeda.
+
+***Virtual Method Invocation (VMI)*** bisa terjadi jika terjadi polimorfisme dan overriding. Pada saat *object* yang sudah dibuat tersebut memanggil *overriden method* pada *parent class*, kompiler Java akan melakukan *invocation* (pemanggilan) terhadap *overriding method* pada *subclass*, di mana yang seharusnya dipanggil adalah *overriden method*.
