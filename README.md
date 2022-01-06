@@ -1,22 +1,19 @@
-# TUGAS BESAR PRAKTIKUM PEMROGRAMAN 2 SEMESTER 3
-<hr>
+# Tugas Besar Praktikum Pemrograman 2
 
-### DOSEN PENGAMPU    : `Arif Amrulloh, S.Kom., M.Kom`
-### ASISTEN PRAKTIKUM : `Muslimin Dita H`
+**Dosen Pengampu:** Arif Amrulloh, S.Kom., M.Kom.  
+**Asisten Praktikum** : Muslimin Dita Herianto
 
-### TEAM
-<!-- diisi repo masing2 -->
-#### - [`AALIYAH KHALIF HANDOYO`](https://github.com/kucing31/20104003_Aaliyah-Khalif-Handoyo_S1SEA_Pemrograman2/tree/main)
-#### - [`ARIS CAHYADI`](https://github.com/Lil-Pumpkin/20104017_Aris-Cahyadi_S1SEA_Pemrogaman2/tree/main)
-#### - [`AHMAD NAWAWI`](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/main)
-#### - [`AJIB SYAH ABAD`](https://github.com/ajep96/20104010_Ajib-Syah-Abad_S1SEA_Pemrograman2/tree/main)
-#### - [`ALIF RIZKI RAMDHANA`](https://github.com/renzien/20104012_Alif-Rizki-Ramdhana_S1SEA_Pemrograman2/tree/main)
+## Anggota Kelompok
+- [`(20104003) Aaliyah Khalif Handoyo`](https://github.com/kucing31/20104003_Aaliyah-Khalif-Handoyo_S1SEA_Pemrograman2/tree/main)
+- [`(20104009) Ahmad Nawawi`](https://github.com/ahmadmcer/20104009_Ahmad-Nawawi_S1SEA_Pemrograman2/tree/main)
+- [`(20104010) Ajib Syah Abad`](https://github.com/ajep96/20104010_Ajib-Syah-Abad_S1SEA_Pemrograman2/tree/main)
+- [`(20104012) Alif Rizki Ramdhana`](https://github.com/renzien/20104012_Alif-Rizki-Ramdhana_S1SEA_Pemrograman2/tree/main)
+- [`(20104017) Aris Cahyadi`](https://github.com/Lil-Pumpkin/20104017_Aris-Cahyadi_S1SEA_Pemrogaman2/tree/main)
 
-## RPG GAME - DRAGON SLAYER 🔥🔥🔥🔥
-<hr>
+# Dragon Slayer
 
-# Sinopsis Game 🎞
-# 🗡 ⚔
+## Sinopsis Game 🎞
+
 Seorang player akan berpetualang. Dia memiliki stats Health, Attack, Defense, Experience, dan Level. Senjata utamanya pedang dan pertahanannya perisai.
 
 Dia mulai berjalan. Jika tidak bertemu monster, maka dia bisa melanjutkan perjalanan atau beristirahat. Jika bertemu monster, dia bisa melawannya atau melarikan diri.
@@ -41,11 +38,9 @@ Setiap monster yang ditemui berdasarkan level player. Jika level player rendah, 
 
 **🎊  🎉**
 
-<hr>
-
 ## Materi Pemrograman OOP yang Relefan Dalam Membuat Game RPG
 
-### Struktur Dasar Dalam Game RPG - DRAGON SLAYER 🔥🔥🔥🔥
+### Struktur Dasar Dalam Game Dragon Slayer
 
 **Class Utama**
 
@@ -78,12 +73,17 @@ Setiap monster yang ditemui berdasarkan level player. Jika level player rendah, 
 
     Penerapan Class dalam pemrograman kami yaitu pada bagian 
     ``` java
-    Class Main {...}
-    Class Player {...}
-    Class Enemy {...}
-    Class Goblin {...}
-    Class Slime {...}
-    Class Minotaur {...}
+    class Main {...}
+    class Player {...}
+    class Enemy {...}
+    class Slime {...}
+    class Goblin {...}
+    class Bandit {...}
+    class Harpy {...}
+    class Minotaur {...}
+    class Witch {...}
+    class Hydra {...}
+    class Dragon {...}
     ```
 
     Untuk penggunaan Enkapsulai, seluruh class menggunakan akses modifire `public` karena untuk dapat diakses oleh main dengan mudah, jadi menggunakan public.
@@ -244,7 +244,7 @@ Setiap monster yang ditemui berdasarkan level player. Jika level player rendah, 
 
     Polymorphisme merupakan sebuah konsep dalam Object Oriented Programing (OOP) dimana class-nya memiliki nama yang sama namun bentuk yang berbeda, maksud dari pernyataan diatas yaitu memmiliki nama yang sama namun memiliki perbedaan dari isi, tipe data lalu juga parameter dari method tersebut berbeda dari method yang memiliki nama yang sama dan juga berbeda dari yang lainnya, contoh penerapan polymorphisme yaitu :
     
-   ```java
+    ```java
     Enemy enemy;
     if (player.getLevel() >= 95) {
         gacha = random.nextInt(8);
@@ -299,8 +299,8 @@ Setiap monster yang ditemui berdasarkan level player. Jika level player rendah, 
             break;
         default:
             throw new IllegalStateException("Unexpected value: " + gacha);
-    } 
-   ```
+    }
+    ```
    
 7. Exception
    
